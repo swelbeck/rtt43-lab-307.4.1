@@ -1,12 +1,18 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: darkslategrey;
+  color: azure;
 }
 
 .section1 {
   border: 2px solid green;
   display: flex;
   flex-wrap: wrap;
+}
+
+a {
+  color: aliceblue;
 }
 
 /* .section1:first-child {
@@ -89,57 +95,66 @@ html {
 /* Progress Bars formatting */
 
 .progress-bar {
-  display: flex;
+  /* display: flex; */
+  background-color: grey;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
 }
 
-.progress-bar > div {
+/* .progress-bar > div {
   flex: 1;
-}
+} */
 
 .progress-bar-right {
   height: 100%;
-  width: 2px;
+  /* width: 2px; */
   background-color: rgba(134, 132, 132, 0.851);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .progress-bar-left {
   height: 100%;
-  width: 2px;
-  background-color: pink;
+  border-radius: 10px 5px 5px 10px;
 }
 
 #python-progress {
+  width: 90%;
   text-align: end;
   color: aliceblue;
-  flex: 90%;
+  /* flex: 90%; */
   background-color: rgb(0, 38, 255);
 }
 
 #sql-progress {
+  width: 90%;
   text-align: end;
   color: aliceblue;
-  flex: 90%;
+  /* flex: 90%; */
   background-color: rgb(0, 38, 255);
 }
 
 #html-progress {
+  width: 60%;
   text-align: end;
   color: aliceblue;
-  flex: 60%;
+  /* flex: 60%; */
   background-color: rgb(0, 38, 255);
 }
 
 #css-progress {
+  width: 40%;
   text-align: end;
   color: aliceblue;
-  flex: 40%;
+  /* flex: 40%; */
   background-color: rgb(0, 38, 255);
 }
 
 #javascript-progress {
+  width: 5%;
   text-align: end;
   color: aliceblue;
-  flex: 5%;
+  /* flex: 5%; */
   background-color: rgb(0, 38, 255);
 }
 
@@ -147,7 +162,7 @@ html {
 /* https://steemit.com/utopian-io/@alfarisi94/how-to-make-step-progress-bar-only-using-css*/
 
 .language {
- justify-content: center;
+  justify-content: center;
 }
 
 .circle-progressbar-parent-container {
@@ -181,11 +196,41 @@ html {
 }
 
 .fill-circle {
-    background-color: lightskyblue;
-    
+  background-color: lightskyblue;
 }
 
 .nofill-circle {
-    background-color: rgb(68, 67, 67);
-    
+  background-color: rgb(68, 67, 67);
+}
+
+/* Testing https://css-tricks.com/css3-progress-bars/*/
+
+.meter {
+  box-sizing: content-box;
+  height: 15px; /* Can be anything */
+
+  /* position: relative; */
+  margin: 5px; /* Just for demo spacing */
+  background: #555;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  width: 90%;
+  text-align: end;
+  font-size: 14px;
+  border-radius: 20px 8px 8px 20px;
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  /* position: relative; */
+  overflow: hidden;
+}
+
+
+
+.orange > span {
+  background-image: linear-gradient(#f1a165, #f36d0a);
 }
