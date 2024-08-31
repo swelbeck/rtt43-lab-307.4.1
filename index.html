@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    
   </head>
 
   <body>
@@ -49,6 +50,12 @@
                     >https://github.com/swelbeck</a
                   >
                 </td>
+              </tr>
+              <tr>
+                <ul>
+                  <li></li>
+                </ul>
+
               </tr>
             </tbody>
           </table>
@@ -255,15 +262,33 @@
           <div id="language-skills">
             <p>Language Skills</p>
             <!-- https://steemit.com/utopian-io/@alfarisi94/how-to-make-step-progress-bar-only-using-css -->
-            <div class="circle-progressbar-container">
-              <ul class="circle-progressbar">
-                <li>Step 1</li>
-                <li>Step 2</li>
-                <li>Step 3</li>
-                <li>Step 4</li>
-                <li>Step 5</li>
-              </ul>
+            <div class="circle-progressbar-parent-container">
+              <div class="language"><p>English</p></div>
+              <div class="circle-progressbar-container">
+                <ul class="circle-progressbar" id="engligh-circle-progressbar">
+                  <li class="fill-circle"></li>
+                  <li class="fill-circle"></li>
+                  <li class="fill-circle"></li>
+                  <li class="fill-circle"></li>
+                  <li class="fill-circle"></li>
+                </ul>
+              </div>
             </div>
+
+            <div class="circle-progressbar-parent-container">
+              <div class="language"><p>Spanish</p></div>
+              <div class="circle-progressbar-container">
+                <ul class="circle-progressbar" id="spanish-circle-progressbar">
+                  <li class="fill-circle"></li>
+                  <li class="fill-circle"></li>
+                  <li class="fill-circle"></li>
+                  <li class="nofill-circle"></li>
+                  <li class="nofill-circle"></li>
+                </ul>
+              </div>
+            </div>
+
+
           </div>
         </section>
       </div>
